@@ -1,0 +1,76 @@
+ @startuml
+
+class Banco {
+    -clientes:LinkedList <Cliente>
+    -admin:Administrador
+    +getClientes(): LinkedList
+    +setClientes(LinkedList <>): void
+    +getAdmin(): Administrador
+}
+
+class Usuario {
+    -nombrePersona:String
+    -nombreUsuario: String
+    -constraseña: String
+    -direccion: String
+    +getNombreCliente(): String
+    +getNombreUsuario(): String
+    +getContraseña(): String
+    +getDireccion(): String
+}
+
+class Cliente {
+    -cuenta: LinkedList<Cuenta>
+
+    +getCuentas(): LinkedList
+    +depositar(double,Cuenta): void
+    +retirar(double,Cuenta): double
+    +saldoDisponible(Cuenta): double
+    +validarContraseña(String): boolean
+    +resumenTransacciones(Cuenta): void
+}
+
+class Administrador {
+    -clientesBanco:LinkedList<Cliente>
+
+    +añadirCliente(Cliente): void
+    +eliminarCliente(String): void
+    +actualizarCliente(String): void
+    +getCuentas(): LinkedList
+    -buscarCliente(String): Usuario
+    +estaCliente(nombreCliente:String): boolean
+    +setClientesAdministrado(Banco): void
+}
+
+class Cuenta {
+    -saldo: double
+    -tipo: String
+    -transacciones: LinkedList<Transaccion>
+
+
+    -registrarTransaccion(): void
+    +obtenerSaldo(): double
+    +depositarSaldo(double): void
+    +retirarSaldo(double): void
+    +mostrarTransacciones(): void
+}
+
+class Transaccion {
+    -LocalDate fecha
+    -double monto
+
+    +mostrarTransaccion(): void
+}
+
+Banco "1" *-- "0*" Cliente
+Banco "1" *-- "1" Administrador
+
+skinparam groupInheritance 2
+Usuario <|-- Cliente
+Usuario <|-- Administrador
+
+Cliente "1*" *-- "1*" Cuenta
+
+Cuenta "1*" *-- "0*" Transaccion
+
+@enduml

@@ -1,0 +1,40 @@
+@startuml
+
+left to right direction
+actor "Admin"
+actor "Cliente"
+rectangle LOGIN{
+"Admin"--- (iniciar sesion)
+"Cliente"--(iniciar sesion)
+(validar datos)<.u.(iniciar sesion):include
+"Cliente"-- (olvido usuario)
+"Cliente"--- (cambiar contraseña)
+(verificar contraseña).u.>(iniciar sesion):extend
+}
+
+newpage
+left to right direction
+"Admin"--(agregar cliente)
+"Admin"--(eliminar cliente)
+"Admin"--(cambiar la info del cliente)
+"Admin"--(ver estado de cta de cliente )
+(seleccionar cliente)<.u.(eliminar cliente):include
+(seleccionar cliente)<.u.(cambiar la info del cliente):include
+(seleccionar cliente)<.u.(ver estado de cta de cliente ):include
+
+newpage
+left to right direction
+"Cliente"--(depositar)
+"Cliente"-- (retirar)
+"Cliente"-- (consultar saldo actual)
+"Cliente"--(estado de cuenta)
+
+(verificar monto negativo)<.u.(depositar):include
+(seleccionar tipo de cuenta)<.u.(retirar):include
+(seleccionar tipo de cuenta)<.u.(depositar):include
+(seleccionar tipo de cuenta)<.u.(estado de cuenta):include
+(seleccionar tipo de cuenta)<.u. (consultar saldo actual):include
+(verificar fondos)<.u.(retirar):include
+
+
+@enduml

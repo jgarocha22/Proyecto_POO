@@ -1,0 +1,3 @@
+edi,edimar zambrano,1234,el paraiso
+palo,Juan Arocha,222,San Antonio
+ax,Axander,333,La Paz

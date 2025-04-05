@@ -1,0 +1,36 @@
+*Descripción de los Actores
+-Cliente: Es el usuario final que utiliza el cajero automático para realizar operaciones relacionadas con su cuenta bancaria.
+
+-Administrador: Es la persona responsable del mantenimiento y la gestión de las cuentas de los clientes.
+
+*Diagrama 1: Inicio de Sesión
+-Descripción:El usuario debe estar registrado en la base de datos del banco y acceder a su cuenta utilizando su nombre de usuario
+ y contraseña. Si ha olvidado alguno de estos datos, puede llevar a cabo el proceso de recuperación. Una vez que haya ingresado,
+ tendrá la opción de cambiar su contraseña y, de manera opcional, verificarla.
+
+-Actores: Usuario del cajero, que puede ser un cliente o un administrador.
+
+-Prerrequisitos: El usuario debe estar registrado en la base de datos del banco. En el caso de los clientes, es necesario
+ que posean una cuenta bancaria activa.
+
+*Diagrama 2: Accesos del Administrador
+-Descripción: El administrador tiene la capacidad de registrar nuevos clientes introduciendo toda la información requerida,
+ así como también puede actualizar esos datos más adelante o eliminar un cliente si es necesario. Para llevar a cabo estas
+ acciones (consultar el estado de cuenta, modificar la información del cliente o eliminarlo), el administrador debe elegir
+ el cliente sobre el cual desea operar
+
+-Actor: Administrador
+
+-Prerrequisitos: El administrador debe estar registrado e iniciar sesión para poder acceder al sistema y sus funciones .
+
+*Diagrama 3: Accesos del Usuario
+-Descripción: El cliente tiene la opción de consultar su saldo actual y solicitar un estado de cuenta que incluya las
+ transacciones más recientes. Para ello, debe seleccionar la cuenta de la cual desea obtener información. Asimismo, el
+ cliente puede retirar dinero de su cuenta eligiendo la cuenta desde la que se deducirá el monto (se verificará que haya
+ saldo suficiente para realizar la operación). También tiene la posibilidad de realizar depósitos, seleccionando la cuenta
+ en la que se ingresará el dinero. En este caso, se comprobará que el monto a depositar sea correcto y no esté en negativo.
+
+-Actor: Cliente
+
+-Prerrequisitos: El cliente debe estar registrado en el sistema y poseer como minimo una cuenta bancaria
+

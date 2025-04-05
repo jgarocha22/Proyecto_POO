@@ -1,0 +1,80 @@
+Cliente:  Pepe Gomez
+Fecha de inicio: 2024-12-26T20:53:39.328750400
+Estado de sesión: ACTIVA
+
+Cliente:  Pepe Gomez
+Fecha de fin: 2024-12-26T20:53:40.964675700
+Estado de sesión: CERRADA
+
+Cliente: Pablo Escobar
+Fecha de inicio: 2024-12-26T20:53:47.390640500
+Estado de sesión: ACTIVA
+
+Cliente: Pablo Escobar
+Fecha de fin: 2024-12-26T20:53:48.634853900
+Estado de sesión: CERRADA
+
+Cliente:  Pepe Gomez
+Fecha de inicio: 2025-01-04T01:22:59.645289600
+Estado de sesión: ACTIVA
+
+Cliente:  Pepe Gomez
+Fecha de fin: 2025-01-04T01:27:51.924987600
+Estado de sesión: CERRADA
+
+Cliente: edimar paola zambrano
+Fecha de inicio: 2025-01-12T10:10:55.054196100
+Estado de sesión: ACTIVA
+
+Cliente: edimar paola zambrano
+Fecha de fin: 2025-01-12T10:11:26.954315800
+Estado de sesión: CERRADA
+
+Cliente: edimar zambrano
+Fecha de inicio: 2025-01-12T10:24:50.447576300
+Estado de sesión: ACTIVA
+
+Cliente: edimar zambrano
+Fecha de fin: 2025-01-12T10:25:28.313562100
+Estado de sesión: CERRADA
+
+Cliente: Juan Arocha
+Fecha de inicio: 2025-01-12T19:08:34.807827100
+Estado de sesión: ACTIVA
+
+Cliente: Juan Arocha
+Fecha de fin: 2025-01-12T19:09:50.850430700
+Estado de sesión: CERRADA
+
+Cliente: edimar zambrano
+Fecha de inicio: 2025-01-12T21:03:21.657745100
+Estado de sesión: ACTIVA
+
+Cliente: edimar zambrano
+Fecha de fin: 2025-01-12T21:03:25.769685800
+Estado de sesión: CERRADA
+
+Cliente: edimar zambrano
+Fecha de inicio: 2025-01-12T21:55:26.881988400
+Estado de sesión: ACTIVA
+
+Cliente: edimar zambrano
+Fecha de inicio: 2025-01-12T21:57:37.268163100
+Estado de sesión: ACTIVA
+
+Cliente: edimar zambrano
+Fecha de inicio: 2025-01-12T21:59:18.601160300
+Estado de sesión: ACTIVA
+
+Cliente: edimar zambrano
+Fecha de inicio: 2025-01-12T22:00:50.503126
+Estado de sesión: ACTIVA
+
+Cliente: edimar zambrano
+Fecha de fin: 2025-01-12T22:01:09.621822700
+Estado de sesión: CERRADA
+
+Cliente: edimar zambrano
+Fecha de inicio: 2025-04-04T21:14:26.232063900
+Estado de sesión: ACTIVA
+

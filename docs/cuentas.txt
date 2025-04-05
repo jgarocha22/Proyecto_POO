@@ -1,0 +1,3 @@
+edi,Ahorro,Corriente,Dolares
+palo,Ahorro,Corriente
+ax,Ahorro
